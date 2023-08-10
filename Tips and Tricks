@@ -1,0 +1,14 @@
+Tips and Tricks I learnt:
+1. To calculate frequency of a string use HashMap or else use the below method.
+***Only If lowercase is present
+  String word1 = "helloworld";
+  int arr1[]=new int[26]; // total 26 characters in english
+  for(char ch:word1.toCharArray())
+  {
+      arr1[ch-'a']++; // for h the ascii value is 104 and a is 97. So when we subtract 104-97 we get 7 which inturn is an index of h when all alphabets are considered from a to z with index 0 to 25.
+
+  }
+We are going to to get the index value of all the characters in the string and we are going to increment the array with those indices.
+if str = "cabcddca";
+then the arr is {2,1,3,2,0,0,0,0......till 26 elements}
+We can convert the numbers again to characters by adding the index to character 'a' and then it will return the ascii value of the resulting number and we will convert that to character.

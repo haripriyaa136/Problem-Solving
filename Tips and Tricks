@@ -1,6 +1,6 @@
 Tips and Tricks I learnt:
 1. To calculate frequency of a string use HashMap or else use the below method.
-Only If lowercase is present
+Only If lowercase is present follow below method or else change that according to Uppercase.
   String word1 = "helloworld";
   int arr1[]=new int[26]; // total 26 characters in english
   for(char ch:word1.toCharArray())
